@@ -1,0 +1,214 @@
+/* 1. Universal Selector - Practices Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Element Selectors - Practices Element selectors */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Practices font-family */
+    font-size: 16px; /* Practices font-size */
+    line-height: 1.6;
+    color: #333333; /* Practices HEX colors */
+    background-color: #f4f6f9; /* Practices background-color and HEX */
+}
+
+header {
+    background-color: rgb(44, 62, 80); /* Practices RGB color */
+    color: #ffffff; /* Practices HEX color */
+    padding: 20px; /* Practices padding (Box model) */
+    text-align: center; /* Practices text alignment */
+}
+
+footer {
+    background-color: rgb(44, 62, 80); /* Practices RGB color */
+    color: #ffffff; /* Practices HEX color */
+    padding: 20px; /* Practices padding (Box model) */
+    text-align: center; /* Practices text alignment */
+}
+
+h1 {
+    font-size: 32px; /* Practices font-size */
+    font-weight: bold; /* Practices font-weight */
+    color: rgb(44, 62, 80); /* Practices RGB color */
+    margin-bottom: 20px; /* Practices margin (Box model) */
+    text-align: center; /* Practices text alignment */
+}
+
+h2 {
+    font-size: 24px; /* Practices font-size */
+    font-weight: bold; /* Practices font-weight */
+    color: #2c3e50; /* Practices HEX color */
+    margin: 15px 0; /* Practices margin (Box model) */
+    border-bottom: 2px solid #2c3e50; /* Practices border (Box model) */
+    padding-bottom: 5px; /* Practices padding (Box model) */
+}
+
+h3 {
+    font-size: 18px; /* Practices font-size */
+    font-weight: bold; /* Practices font-weight */
+    color: #34495e;
+    margin-bottom: 10px; /* Practices margin (Box model) */
+}
+
+p {
+    margin-bottom: 15px; /* Practices margin (Box model) */
+    text-align: justify; /* Practices text alignment */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* Practices margin (Box model) */
+    border: 3px solid #cccccc; /* Practices border (Box model) */
+    border-radius: 8px; /* Practices border-radius (Box model) */
+    padding: 5px; /* Practices padding (Box model) */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0; /* Practices margin (Box model) */
+}
+
+th {
+    background-color: rgb(52, 152, 219); /* Practices RGB color */
+    color: #ffffff; /* Practices HEX color */
+    padding: 10px; /* Practices padding (Box model) */
+    font-weight: bold; /* Practices font-weight */
+    border: 1px solid #dddddd; /* Practices border (Box model) */
+    text-align: left; /* Practices text alignment */
+}
+
+td {
+    padding: 10px; /* Practices padding (Box model) */
+    border: 1px solid #dddddd; /* Practices border (Box model) */
+    text-align: left; /* Practices text alignment */
+}
+
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 20px; /* Practices margin (Box model) */
+}
+
+li {
+    margin-bottom: 5px; /* Practices margin (Box model) */
+}
+
+/* 3. ID Selector - Practices ID selector */
+#page-title {
+    font-size: 28px; /* Practices font-size */
+    font-weight: bold; /* Practices font-weight */
+    letter-spacing: 2px;
+}
+
+/* 4. Class Selectors - Practices Class selectors */
+
+/* Container wrapper (Kept in HTML, but removed shadow/visual box styling in CSS) */
+.container {
+    max-width: 960px; /* Limits width nicely */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px; /* Practices padding (Box model) */
+}
+
+/* Section styling without shadow/boxes */
+.section {
+    margin: 20px 0; /* Practices margin (Box model) */
+    padding: 15px; /* Practices padding (Box model) */
+    border: 1px solid #dddddd; /* Practices border (Box model) */
+    border-radius: 6px; /* Practices border-radius (Box model) */
+    background-color: #ffffff; /* Simple white background for sections */
+}
+
+/* Navigation Bars styling as required by Task 08 */
+.navbar {
+    background-color: rgb(52, 73, 94); /* Background color (RGB) */
+    padding: 10px; /* Padding */
+    text-align: center; /* Text alignment */
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #ffffff; /* Text color (HEX) */
+    text-decoration: none;
+    padding: 8px 15px; /* Padding */
+    font-size: 15px; /* Font size */
+    font-weight: bold; /* Font weight */
+    display: inline-block;
+}
+
+a:hover {
+    color: red; 
+}
+
+.navbar a:hover{
+    background-color: #1abc9c; /* Clean hover color change */
+    border-radius: 4px; /* Border radius */
+}
+
+/* Social links container custom styling */
+.social-links a {
+    margin-right: 20px; /* practices margin (box model) */
+    font-size: 18px; /* practices font-size */
+    font-weight: bold; /* practices font-weight */
+}
+
+/* Profile image custom styling */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Border radius */
+    border: 4px solid #ffffff; /* Border */
+    margin: 10px auto; /* Margin */
+}
+
+/* Simple Form Styling */
+.contact-form {
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+footer p{
+    color:#ffffff;
+    text-align: center;
+}
